@@ -1,3 +1,4 @@
+# Importing all at once
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -7,12 +8,21 @@ import cv2
 import numpy as np
 import os, random
 
-# Setups for Paths
-## Change it to your local paths  
+
+
+## Setting-up Directories
+# I've downloaded the whole annotations & raw videos from our class Onedrive, then put them into my local directory
+# What we're going to do is, therefore, pulling all videos together to train our models.
+# Change these to your local paths  
 XML_DIR   = r"\\JUNGMINN\Users\jungm\Documents\GitHub\jungminnking-econ8310_semester_project\Annotations"
 VIDEO_DIR = r"\\JUNGMINN\Users\jungm\Documents\GitHub\jungminnking-econ8310_semester_project\Raw Videos"
 
-# Pairing Each XML with Videos By Filename
+
+
+## Pairing Each XML with Videos By Filename
+# We're going to match each xml and video
+# You'll see some of them are not matched just because someone hasn't finished annotations or mistyped filenames...
+# By far, I'm able to identify 59 pairs of XML and Videos out of total 78
 all_pairs = []
 for fname in os.listdir(XML_DIR):
     if fname.endswith('.xml'):
@@ -26,9 +36,14 @@ for fname in os.listdir(XML_DIR):
 
 print(f"Found {len(all_pairs)} matched XML/video pairs")
 
-# Data Framinig for Annotated Videos (All Paired Vedioes) 
-class BaseballDataset(Dataset):
-    def __init__(self, whatever_pairs, n_frames=8, img_size=64): # we're going to build datasets for whatever pair
+
+
+## Data Framinig for Annotated Videos (All Paired Vedioes) 
+# This is a data loading helper; 
+# Instead of pulling images, we're going to pull video; basically, consisting of "image + time," therefore having 3 dimensions
+# I believe this will save us a lot of time and memory, since we' done have to manually handle each frame, at the same time, allowing us to use more data sets!
+class BaseballDataset(Dataset): # Name it "BaseballDataset"
+    def __init__(self, whatever_pairs, n_frames=8, img_size=64): # we're going to build datasets that can deal with whatever pair from the all_pairs
         self.n_frames  = n_frames
         self.img_size  = img_size
         self.samples   = []
@@ -42,11 +57,11 @@ class BaseballDataset(Dataset):
                 boxes = []
                 for box in track.findall('box'):
                     if int(box.attrib['outside']) == 1:
-                        continue #in case that balls turn invisible
+                        continue # in case that balls turn invisible
                     frame_idx = int(box.attrib['frame'])
                     if frame_idx >= total_frames:
-                        continue #Skips if beyond the actual number of frames
-                    moving_attr = box.find("attribute[@name='moving']") #moving and stationary
+                        continue # Skips if beyond the actual number of frames
+                    moving_attr = box.find("attribute[@name='moving']") # moving and stationary
                     is_moving   = moving_attr is not None and moving_attr.text.strip().lower() == 'true'
                     boxes.append({
                         'frame'  : frame_idx,
@@ -55,10 +70,10 @@ class BaseballDataset(Dataset):
                         'xbr'    : float(box.attrib['xbr']),
                         'ybr'    : float(box.attrib['ybr']),
                         'moving' : is_moving,
-                        'frames_ref': frames,  # store reference to THIS video's frames
+                        'frames_ref': frames,  # store reference to corresponding video's frames
                     })
                 if len(boxes) < n_frames:
-                    continue #If a track has fewer visible boxes than our window size, we can't build a sample from it — skip it.
+                    continue #If a track has fewer visible boxes than our window size, we can't build a sample from it; therefore skip it.
                 label = 1 if sum(b['moving'] for b in boxes) > len(boxes) / 2 else 0 #Majority vote — if more than half the boxes in this track are moving=true, the whole track gets label 1 (pitched), otherwise 0 (stationary).
                 for start in range(0, len(boxes) - n_frames + 1, n_frames // 2):
                     self.samples.append((boxes[start:start + n_frames], label)) 
@@ -94,21 +109,25 @@ class BaseballDataset(Dataset):
         return video, torch.tensor(label, dtype=torch.long)
 
 
-# Randome Sampling for Training and Testing 
-random.seed(42) 
-random.shuffle(all_pairs)
 
-# We're going to make a random subset
-subset_pairs = all_pairs[:int(0.2 * len(all_pairs))]
-split        = int(0.8 * len(subset_pairs)) # 0.8 = 80% to training # 20% to Testing; We can always change
+## Randome Sampling for Training and Testing 
+# Initially, I was going to use all paired data, However, it requires higher RAM than my laptop has
+# So I ended up making "subset_pairs," which basically 20% of all_pairs (around 11 videos)
+# But you might be able to raise such sub-sample size; it'll take some time...
+random.seed(42) 
+random.shuffle(all_pairs) # We're going to random sample the subset
+subset_pairs = all_pairs[:int(0.2 * len(all_pairs))] #0.2 = 20% of all pairs
+split        = int(0.8 * len(subset_pairs)) # Rule of thumb; 0.8 = 80% to training & 20% to Testing; Yet, we can always change
 train_pairs  = subset_pairs[:split]
 test_pairs    = subset_pairs[split:]
 
 train_dataset = BaseballDataset(train_pairs, n_frames=8)
 test_dataset   = BaseballDataset(test_pairs,   n_frames=8) 
-train_dataloader = DataLoader(train_dataset, batch_size=4, shuffle=True) #shuffle=True, to randomize sample order for each epoch
+train_dataloader = DataLoader(train_dataset, batch_size=4, shuffle=True) #shuffle=True, to randomize sample order for each epoch; Random on Random
 test_dataloader  = DataLoader(test_dataset,   batch_size=4)
 
+# You can see many video pairs we're using
+# How many moving and stationalry in both trains and tests
 print(f"Total video pairs (subset) : {len(subset_pairs)}")
 print(f"Train samples     : {len(train_dataset)}")
 print(f"Test samples      : {len(test_dataset)}")
@@ -118,7 +137,11 @@ print(f"Moving (Test)     : {sum(s[1] for s in test_dataset.samples)}")
 print(f"Stationary (Test) : {sum(1-s[1] for s in test_dataset.samples)}")
 print(f"Stationary (Test) : {sum(1-s[1] for s in test_dataset.samples)}")
 
-## LeNet Model
+
+
+### This is where we can build CNNs
+## I used LeNet first, and will build ResNet as well (just based on what we've learn in the class)
+## I believe this is where you could bulid your model YOLOv8? (sorry, I don't know much about the backgounds of this model)  
 # Basic LeNet
 class BaseballCNN(nn.Module):
     def __init__(self):
@@ -141,18 +164,24 @@ class BaseballCNN(nn.Module):
         x = self.fc3(x)
         return x
 
-# Uses GPU if available, otherwise CPU. 
+
+
+## Uses GPU if available, otherwise CPU. 
+# I'm using Window, as well as Positron generally, so...
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 mLeNet  = BaseballCNN().to(device)
 
-# Initialise lazy layers with one dummy forward pass
-dummy = torch.zeros(1, 3, 8, 64, 64).to(device)
-mLeNet(dummy)
 
+
+## Fitting and Testing Process
 # Setting Optimizers & Epoch
 opt  = torch.optim.Adam(mLeNet.parameters(), lr=1e-3)
 crit = nn.CrossEntropyLoss()
 epoch = 20
+
+# Initialise lazy layers with one dummy forward pass
+dummy = torch.zeros(1, 3, 8, 64, 64).to(device)
+mLeNet(dummy)
 
 # Fitting through Foward and Backword Passes
 for epoch in range(epoch): 
@@ -165,8 +194,8 @@ for epoch in range(epoch):
         loss = crit(out, labels)
         loss.backward() #Backward pass — computes gradients via backpropagation. opt.step() uses those gradients to update the weights
         opt.step()
-        total_loss += loss.item()
-        correct    += (out.argmax(1) == labels).sum().item() #Tracks loss and accuracy across the epoch. out.argmax(1) picks the class with the highest score.
+        total_loss += loss.item() #It reflects how “wrong” the predicted probabilities are
+        correct    += (out.argmax(1) == labels).sum().item() #Tracks loss and accuracy across the epoch. #Number of correct classifications  #out.argmax(1) picks the class with the highest score.
         total      += len(labels)
 #Testing the model
     mLeNet.eval()
@@ -176,11 +205,14 @@ for epoch in range(epoch):
             videos, labels = videos.to(device), labels.to(device)
             val_correct += (mLeNet(videos).argmax(1) == labels).sum().item()
             val_total   += len(labels) #Runs validation batches through the model and counts correct predictions.
-
+# Again, here the accuracy is not MAE or MAPE (since result's is binary); rather it shows the number of correct classifications relative to total. 
+# I believe this error method is what we've done in the class (PyTorch videos in NN part 1).
+# But I'll keep searching other types of error applicable.
     print(f"Epoch {epoch+1:02d}/{20}  "
          f"loss={total_loss/len(train_dataloader):.4f}  "
          f"train_acc={correct/total:.2%}  "
          f"val_acc={val_correct/max(val_total,1):.2%}")
+
 
 
 # If we need to save weights
