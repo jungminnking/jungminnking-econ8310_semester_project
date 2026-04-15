@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3826650</id>
+      <size>53</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-05 23:47:23.481815+00:00</created>
+      <updated>2026-04-05 23:53:32.010367+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>52</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3825590</id>
+          <start>0</start>
+          <stop>52</stop>
+          <url>https://app.cvat.ai/api/jobs/3826650/dataset/export/api/jobs/3826650</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>ajnutt24</username>
+        <email>adam.nutt24@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>sports ball</name>
+          <color>#300000</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-05 23:53:51.800747+00:00</dumped>
+    <original_size>
+      <width>2160</width>
+      <height>3840</height>
+    </original_size>
+  </meta>
+  <track id="0" label="sports ball" source="manual">
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="1987.22" ytl="1867.51" xbr="2160.00" ybr="1995.51" z_order="0">
+    </box>
+    <box frame="30" keyframe="1" outside="1" occluded="0" xtl="1987.22" ytl="1867.51" xbr="2160.00" ybr="1995.51" z_order="0">
+    </box>
+  </track>
+  <track id="1" label="sports ball" source="manual">
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="1422.52" ytl="2048.21" xbr="1618.28" ybr="2153.62" z_order="0">
+    </box>
+    <box frame="31" keyframe="1" outside="1" occluded="0" xtl="1422.52" ytl="2048.21" xbr="1618.28" ybr="2153.62" z_order="0">
+    </box>
+  </track>
+</annotations>

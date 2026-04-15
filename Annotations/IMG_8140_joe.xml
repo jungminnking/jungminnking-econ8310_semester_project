@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3818511</id>
+      <size>45</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-04 00:24:01.358222+00:00</created>
+      <updated>2026-04-04 00:59:48.107548+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>44</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3817451</id>
+          <start>0</start>
+          <stop>44</stop>
+          <url>https://app.cvat.ai/api/jobs/3818511/dataset/export/api/jobs/3818511</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>cvatUserMan</username>
+        <email>kirk@moonspace.net</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#c04080</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-04 01:03:31.033625+00:00</dumped>
+    <original_size>
+      <width>2160</width>
+      <height>3840</height>
+    </original_size>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="17" keyframe="1" outside="0" occluded="0" xtl="2120.40" ytl="1157.98" xbr="2159.96" ybr="1237.13" z_order="0">
+    </box>
+    <box frame="18" keyframe="1" outside="0" occluded="0" xtl="1817.17" ytl="1214.52" xbr="1973.34" ybr="1293.66" rotation="347.80" z_order="0">
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="1518.00" ytl="1292.10" xbr="1671.56" ybr="1373.26" rotation="344.00" z_order="0">
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="1481.07" ytl="1319.59" xbr="1692.86" ybr="1401.44" rotation="350.00" z_order="0">
+    </box>
+    <box frame="21" keyframe="1" outside="1" occluded="0" xtl="1481.07" ytl="1319.59" xbr="1692.86" ybr="1401.44" rotation="350.00" z_order="0">
+    </box>
+  </track>
+</annotations>

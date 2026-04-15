@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3818534</id>
+      <size>55</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-04 01:06:59.877166+00:00</created>
+      <updated>2026-04-04 01:09:44.637491+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>54</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3817474</id>
+          <start>0</start>
+          <stop>54</stop>
+          <url>https://app.cvat.ai/api/jobs/3818534/dataset/export/api/jobs/3818534</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>cvatUserMan</username>
+        <email>kirk@moonspace.net</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#c04080</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-04 01:09:50.030501+00:00</dumped>
+    <original_size>
+      <width>2160</width>
+      <height>3840</height>
+    </original_size>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="31" keyframe="1" outside="0" occluded="1" xtl="2082.05" ytl="1148.03" xbr="2158.38" ybr="1242.17" z_order="0">
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="1786.32" ytl="1209.58" xbr="1938.80" ybr="1303.72" rotation="346.00" z_order="0">
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="1494.99" ytl="1284.64" xbr="1647.48" ybr="1378.78" rotation="346.00" z_order="0">
+    </box>
+    <box frame="34" keyframe="1" outside="0" occluded="1" xtl="1520.40" ytl="1028.71" xbr="1611.90" ybr="1122.85" rotation="1.50" z_order="0">
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="1625.12" ytl="603.03" xbr="1736.08" ybr="804.56" rotation="13.10" z_order="0">
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="1779.60" ytl="109.60" xbr="1897.91" ybr="332.09" rotation="13.10" z_order="0">
+    </box>
+    <box frame="37" keyframe="1" outside="1" occluded="0" xtl="1779.60" ytl="109.60" xbr="1897.91" ybr="332.09" rotation="13.10" z_order="0">
+    </box>
+  </track>
+</annotations>

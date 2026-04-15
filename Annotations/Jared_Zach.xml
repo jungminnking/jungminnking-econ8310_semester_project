@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3850751</id>
+      <size>357</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-13 01:25:17.831145+00:00</created>
+      <updated>2026-04-13 16:59:49.561552+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>356</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3849331</id>
+          <start>0</start>
+          <stop>356</stop>
+          <url>https://app.cvat.ai/api/jobs/3850751/dataset/export/api/jobs/3850751</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>steph9</username>
+        <email>ssimmons86@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#c04080</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-13 17:03:41.839308+00:00</dumped>
+  </meta>
+  <image id="0" name="jared1_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="1" name="jared1_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="2" name="jared1_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="3" name="jared1_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="4" name="jared1_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="5" name="jared1_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="6" name="jared1_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="7" name="jared1_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="8" name="jared1_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="9" name="jared1_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="10" name="jared1_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="11" name="jared1_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="12" name="jared1_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="13" name="jared1_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="14" name="jared1_0015.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1476.60" ytl="894.00" xbr="1505.80" ybr="916.10" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="jared1_0016.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1479.60" ytl="886.90" xbr="1500.10" ybr="916.00" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="jared1_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1475.00" ytl="887.30" xbr="1501.40" ybr="917.40" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="jared1_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1475.06" ytl="891.20" xbr="1499.50" ybr="913.20" rotation="0.10" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="jared1_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1472.08" ytl="897.60" xbr="1498.01" ybr="918.22" rotation="0.40" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="jared1_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1465.00" ytl="907.60" xbr="1496.70" ybr="936.30" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="jared1_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1462.83" ytl="925.52" xbr="1493.24" ybr="952.32" rotation="358.90" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="jared1_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1457.47" ytl="948.12" xbr="1490.99" ybr="980.80" rotation="0.40" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="jared1_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1453.70" ytl="981.60" xbr="1487.40" ybr="1013.90" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="jared1_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1449.90" ytl="1028.30" xbr="1484.80" ybr="1060.00" z_order="0">
+    </box>
+  </image>
+  <image id="24" name="jared1_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1437.00" ytl="1087.90" xbr="1479.00" ybr="1129.00" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="jared1_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1422.30" ytl="1158.60" xbr="1472.00" ybr="1203.00" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="jared1_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1410.00" ytl="1256.30" xbr="1467.00" ybr="1324.20" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="jared1_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1396.00" ytl="1376.40" xbr="1455.00" ybr="1457.40" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="jared1_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1377.00" ytl="1546.00" xbr="1437.80" ybr="1629.00" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="jared1_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1166.40" ytl="1543.80" xbr="1304.10" ybr="1647.80" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="jared1_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="930.00" ytl="1378.00" xbr="999.30" ybr="1427.00" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="jared1_0032.jpg" width="2160" height="3840">
+  </image>
+  <image id="32" name="jared1_0033.jpg" width="2160" height="3840">
+  </image>
+  <image id="33" name="jared1_0034.jpg" width="2160" height="3840">
+  </image>
+  <image id="34" name="jared1_0035.jpg" width="2160" height="3840">
+  </image>
+  <image id="35" name="jared1_0036.jpg" width="2160" height="3840">
+  </image>
+  <image id="36" name="jared1_0037.jpg" width="2160" height="3840">
+  </image>
+  <image id="37" name="jared1_0038.jpg" width="2160" height="3840">
+  </image>
+  <image id="38" name="jared1_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="39" name="jared1_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="40" name="jared1_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="41" name="jared1_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="42" name="jared1_0043.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="894.46" ytl="1164.30" xbr="913.70" ybr="1180.80" z_order="0">
+    </box>
+  </image>
+  <image id="43" name="jared1_0044.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="929.20" ytl="1166.60" xbr="947.80" ybr="1189.00" z_order="0">
+    </box>
+  </image>
+  <image id="44" name="jared1_0045.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="949.70" ytl="1176.30" xbr="972.82" ybr="1194.84" z_order="0">
+    </box>
+  </image>
+  <image id="45" name="jared1_0046.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="970.50" ytl="1183.30" xbr="988.99" ybr="1204.08" z_order="0">
+    </box>
+  </image>
+  <image id="46" name="jared1_0047.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="989.00" ytl="1194.80" xbr="1005.20" ybr="1215.60" z_order="0">
+    </box>
+  </image>
+  <image id="47" name="jared1_0048.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1014.41" ytl="1213.32" xbr="1030.58" ybr="1231.80" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="jared1_0049.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1035.20" ytl="1229.50" xbr="1051.37" ybr="1250.29" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="jared1_0050.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1058.91" ytl="1250.80" xbr="1073.90" ybr="1272.50" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="jared1_0051.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1079.98" ytl="1273.60" xbr="1095.60" ybr="1295.60" z_order="0">
+    </box>
+  </image>
+  <image id="51" name="jared2_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="52" name="jared2_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="53" name="jared2_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="54" name="jared2_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="55" name="jared2_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="56" name="jared2_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="57" name="jared2_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="58" name="jared2_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="59" name="jared2_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="60" name="jared2_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="61" name="jared2_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="62" name="jared2_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="63" name="jared2_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="64" name="jared2_0014.jpg" width="2160" height="3840">
+    <box label="baseball" source="file" occluded="0" xtl="732.00" ytl="2244.00" xbr="856.00" ybr="2344.00" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="jared2_0015.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1484.30" ytl="884.20" xbr="1509.80" ybr="906.10" z_order="0">
+    </box>
+  </image>
+  <image id="66" name="jared2_0016.jpg" width="2160" height="3840">
+    <box label="baseball" source="file" occluded="0" xtl="716.00" ytl="2160.00" xbr="848.00" ybr="2284.00" z_order="0">
+    </box>
+    <box label="baseball" source="manual" occluded="0" xtl="1485.70" ytl="871.40" xbr="1508.81" ybr="892.19" z_order="0">
+    </box>
+  </image>
+  <image id="67" name="jared2_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1483.39" ytl="864.47" xbr="1508.80" ybr="892.19" z_order="0">
+    </box>
+    <box label="baseball" source="file" occluded="0" xtl="772.00" ytl="1872.00" xbr="916.00" ybr="1988.00" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="jared2_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1486.10" ytl="854.40" xbr="1513.80" ybr="884.40" z_order="0">
+    </box>
+  </image>
+  <image id="69" name="jared2_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1483.01" ytl="853.20" xbr="1514.60" ybr="885.50" z_order="0">
+    </box>
+  </image>
+  <image id="70" name="jared2_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1487.50" ytl="860.00" xbr="1518.91" ybr="890.36" z_order="0">
+    </box>
+  </image>
+  <image id="71" name="jared2_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1487.90" ytl="866.55" xbr="1516.50" ybr="898.80" z_order="0">
+    </box>
+  </image>
+  <image id="72" name="jared2_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1488.01" ytl="882.95" xbr="1522.67" ybr="915.30" z_order="0">
+    </box>
+    <box label="baseball" source="file" occluded="0" xtl="612.00" ytl="2220.00" xbr="824.00" ybr="2380.00" z_order="0">
+    </box>
+  </image>
+  <image id="73" name="jared2_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1490.32" ytl="903.75" xbr="1522.70" ybr="938.40" z_order="0">
+    </box>
+    <box label="baseball" source="file" occluded="0" xtl="704.00" ytl="1932.00" xbr="848.00" ybr="2124.00" z_order="0">
+    </box>
+  </image>
+  <image id="74" name="jared2_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1489.69" ytl="930.10" xbr="1525.30" ybr="965.50" z_order="0">
+    </box>
+  </image>
+  <image id="75" name="jared2_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1483.83" ytl="966.74" xbr="1521.10" ybr="1003.80" z_order="0">
+    </box>
+  </image>
+  <image id="76" name="jared2_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1480.90" ytl="1012.74" xbr="1524.50" ybr="1058.90" z_order="0">
+    </box>
+  </image>
+  <image id="77" name="jared2_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1476.73" ytl="1084.10" xbr="1528.90" ybr="1131.21" z_order="0">
+    </box>
+  </image>
+  <image id="78" name="jared2_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1477.53" ytl="1168.61" xbr="1526.00" ybr="1231.11" z_order="0">
+    </box>
+  </image>
+  <image id="79" name="jared2_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1467.20" ytl="1280.29" xbr="1527.30" ybr="1347.39" z_order="0">
+    </box>
+  </image>
+  <image id="80" name="jared2_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1459.84" ytl="1427.83" xbr="1526.61" ybr="1509.31" z_order="0">
+    </box>
+  </image>
+  <image id="81" name="jared2_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1041.70" ytl="1463.06" xbr="1162.80" ybr="1511.30" z_order="0">
+    </box>
+  </image>
+  <image id="82" name="jared2_0032.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="716.00" ytl="1461.54" xbr="807.79" ybr="1504.01" z_order="0">
+    </box>
+  </image>
+  <image id="83" name="jared2_0033.jpg" width="2160" height="3840">
+  </image>
+  <image id="84" name="jared2_0034.jpg" width="2160" height="3840">
+  </image>
+  <image id="85" name="jared2_0035.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="201.19" ytl="1490.56" xbr="254.33" ybr="1522.90" z_order="0">
+    </box>
+  </image>
+  <image id="86" name="jared2_0036.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="151.50" ytl="1472.41" xbr="177.83" ybr="1502.00" z_order="0">
+    </box>
+  </image>
+  <image id="87" name="jared2_0037.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="181.13" ytl="1446.06" xbr="214.06" ybr="1472.41" z_order="0">
+    </box>
+  </image>
+  <image id="88" name="jared2_0038.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="243.70" ytl="1426.30" xbr="273.34" ybr="1452.70" z_order="0">
+    </box>
+  </image>
+  <image id="89" name="jared2_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="90" name="jared2_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="91" name="jared2_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="92" name="jared2_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="93" name="jared2_0043.jpg" width="2160" height="3840">
+  </image>
+  <image id="94" name="jared2_0044.jpg" width="2160" height="3840">
+  </image>
+  <image id="95" name="jared2_0045.jpg" width="2160" height="3840">
+  </image>
+  <image id="96" name="jared2_0046.jpg" width="2160" height="3840">
+  </image>
+  <image id="97" name="jared2_0047.jpg" width="2160" height="3840">
+  </image>
+  <image id="98" name="jared2_0048.jpg" width="2160" height="3840">
+  </image>
+  <image id="99" name="jared2_0049.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="836.52" ytl="1448.97" xbr="850.38" ybr="1474.38" z_order="0">
+    </box>
+  </image>
+  <image id="100" name="jared2_0050.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="855.00" ytl="1430.50" xbr="880.41" ybr="1451.28" z_order="0">
+    </box>
+  </image>
+  <image id="101" name="jared2_0051.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="886.38" ytl="1417.20" xbr="911.20" ybr="1437.30" z_order="0">
+    </box>
+  </image>
+  <image id="102" name="jared3_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="103" name="jared3_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="104" name="jared3_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="105" name="jared3_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="106" name="jared3_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="107" name="jared3_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="108" name="jared3_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="109" name="jared3_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="110" name="jared3_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="111" name="jared3_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="112" name="jared3_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="113" name="jared3_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="114" name="jared3_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="115" name="jared3_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="116" name="jared3_0015.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1501.88" ytl="889.90" xbr="1527.30" ybr="913.00" z_order="0">
+    </box>
+  </image>
+  <image id="117" name="jared3_0016.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1504.19" ytl="889.90" xbr="1531.91" ybr="908.37" z_order="0">
+    </box>
+  </image>
+  <image id="118" name="jared3_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1506.50" ytl="889.90" xbr="1531.91" ybr="910.68" z_order="0">
+    </box>
+  </image>
+  <image id="119" name="jared3_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1508.81" ytl="894.50" xbr="1534.22" ybr="917.60" z_order="0">
+    </box>
+  </image>
+  <image id="120" name="jared3_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1515.70" ytl="896.80" xbr="1541.10" ybr="926.80" z_order="0">
+    </box>
+  </image>
+  <image id="121" name="jared3_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1511.12" ytl="912.99" xbr="1548.10" ybr="945.30" z_order="0">
+    </box>
+  </image>
+  <image id="122" name="jared3_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1513.43" ytl="938.40" xbr="1550.40" ybr="968.40" z_order="0">
+    </box>
+  </image>
+  <image id="123" name="jared3_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1517.24" ytl="971.70" xbr="1551.70" ybr="1001.30" z_order="0">
+    </box>
+  </image>
+  <image id="124" name="jared3_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1520.00" ytl="1013.71" xbr="1559.11" ybr="1047.11" z_order="0">
+    </box>
+  </image>
+  <image id="125" name="jared3_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1524.49" ytl="1059.27" xbr="1565.60" ybr="1098.50" z_order="0">
+    </box>
+  </image>
+  <image id="126" name="jared3_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1527.10" ytl="1123.70" xbr="1567.20" ybr="1171.59" z_order="0">
+    </box>
+  </image>
+  <image id="127" name="jared3_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1527.29" ytl="1204.08" xbr="1575.80" ybr="1257.22" z_order="0">
+    </box>
+  </image>
+  <image id="128" name="jared3_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1527.30" ytl="1312.70" xbr="1587.40" ybr="1377.35" z_order="0">
+    </box>
+  </image>
+  <image id="129" name="jared3_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1537.60" ytl="1448.37" xbr="1589.70" ybr="1512.01" z_order="0">
+    </box>
+  </image>
+  <image id="130" name="jared3_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1544.58" ytl="1624.71" xbr="1605.60" ybr="1724.80" z_order="0">
+    </box>
+  </image>
+  <image id="131" name="jared3_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1552.80" ytl="1868.40" xbr="1614.90" ybr="1985.80" z_order="0">
+    </box>
+  </image>
+  <image id="132" name="jared3_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1867.70" ytl="1392.70" xbr="1976.30" ybr="1575.10" z_order="0">
+    </box>
+  </image>
+  <image id="133" name="jared3_0032.jpg" width="2160" height="3840">
+  </image>
+  <image id="134" name="jared3_0033.jpg" width="2160" height="3840">
+  </image>
+  <image id="135" name="jared3_0034.jpg" width="2160" height="3840">
+  </image>
+  <image id="136" name="jared3_0035.jpg" width="2160" height="3840">
+  </image>
+  <image id="137" name="jared3_0036.jpg" width="2160" height="3840">
+  </image>
+  <image id="138" name="jared3_0037.jpg" width="2160" height="3840">
+  </image>
+  <image id="139" name="jared3_0038.jpg" width="2160" height="3840">
+  </image>
+  <image id="140" name="jared3_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="141" name="jared3_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="142" name="jared3_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="143" name="jared3_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="144" name="jared3_0043.jpg" width="2160" height="3840">
+  </image>
+  <image id="145" name="jared3_0044.jpg" width="2160" height="3840">
+  </image>
+  <image id="146" name="jared3_0045.jpg" width="2160" height="3840">
+  </image>
+  <image id="147" name="jared3_0046.jpg" width="2160" height="3840">
+  </image>
+  <image id="148" name="jared3_0047.jpg" width="2160" height="3840">
+  </image>
+  <image id="149" name="jared3_0048.jpg" width="2160" height="3840">
+  </image>
+  <image id="150" name="jared3_0049.jpg" width="2160" height="3840">
+  </image>
+  <image id="151" name="jared3_0050.jpg" width="2160" height="3840">
+  </image>
+  <image id="152" name="jared3_0051.jpg" width="2160" height="3840">
+  </image>
+  <image id="153" name="jared3_0052.jpg" width="2160" height="3840">
+  </image>
+  <image id="154" name="jared3_0053.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="2127.40" ytl="546.40" xbr="2155.50" ybr="593.40" z_order="0">
+    </box>
+  </image>
+  <image id="155" name="jared3_0054.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="2068.90" ytl="640.70" xbr="2096.50" ybr="673.40" z_order="0">
+    </box>
+  </image>
+  <image id="156" name="jared3_0055.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="2035.20" ytl="690.60" xbr="2064.70" ybr="717.20" z_order="0">
+    </box>
+  </image>
+  <image id="157" name="jared4_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="158" name="jared4_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="159" name="jared4_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="160" name="jared4_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="161" name="jared4_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="162" name="jared4_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="163" name="jared4_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="164" name="jared4_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="165" name="jared4_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="166" name="jared4_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="167" name="jared4_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="168" name="jared4_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="169" name="jared4_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="170" name="jared4_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="171" name="jared4_0015.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1559.90" ytl="887.70" xbr="1583.70" ybr="910.10" z_order="0">
+    </box>
+  </image>
+  <image id="172" name="jared4_0016.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1565.60" ytl="889.70" xbr="1586.40" ybr="912.20" z_order="0">
+    </box>
+  </image>
+  <image id="173" name="jared4_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1566.60" ytl="892.20" xbr="1589.70" ybr="919.90" z_order="0">
+    </box>
+    <box label="baseball" source="file" occluded="0" xtl="696.00" ytl="1892.00" xbr="812.00" ybr="1996.00" z_order="0">
+    </box>
+  </image>
+  <image id="174" name="jared4_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1564.34" ytl="904.08" xbr="1594.30" ybr="928.70" z_order="0">
+    </box>
+  </image>
+  <image id="175" name="jared4_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1571.83" ytl="909.44" xbr="1601.50" ybr="939.80" z_order="0">
+    </box>
+  </image>
+  <image id="176" name="jared4_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1568.11" ytl="935.75" xbr="1600.70" ybr="964.20" z_order="0">
+    </box>
+  </image>
+  <image id="177" name="jared4_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1571.80" ytl="964.40" xbr="1608.10" ybr="993.22" z_order="0">
+    </box>
+  </image>
+  <image id="178" name="jared4_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1585.90" ytl="999.50" xbr="1611.30" ybr="1026.60" z_order="0">
+    </box>
+  </image>
+  <image id="179" name="jared4_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1579.75" ytl="1042.07" xbr="1616.00" ybr="1074.70" z_order="0">
+    </box>
+  </image>
+  <image id="180" name="jared4_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1579.92" ytl="1098.18" xbr="1621.80" ybr="1142.80" z_order="0">
+    </box>
+  </image>
+  <image id="181" name="jared4_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1584.72" ytl="1169.70" xbr="1628.30" ybr="1226.90" z_order="0">
+    </box>
+  </image>
+  <image id="182" name="jared4_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1585.19" ytl="1267.63" xbr="1636.10" ybr="1335.20" z_order="0">
+    </box>
+  </image>
+  <image id="183" name="jared4_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1586.64" ytl="1389.50" xbr="1642.53" ybr="1464.00" z_order="0">
+    </box>
+  </image>
+  <image id="184" name="jared4_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1589.77" ytl="1544.32" xbr="1652.00" ybr="1625.00" z_order="0">
+    </box>
+  </image>
+  <image id="185" name="jared4_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1602.73" ytl="1751.20" xbr="1655.83" ybr="1801.70" z_order="0">
+    </box>
+  </image>
+  <image id="186" name="jared4_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1328.40" ytl="1602.14" xbr="1418.50" ybr="1671.30" z_order="0">
+    </box>
+  </image>
+  <image id="187" name="jared4_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1185.60" ytl="1518.18" xbr="1251.60" ybr="1568.90" z_order="0">
+    </box>
+  </image>
+  <image id="188" name="jared4_0032.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1087.70" ytl="1472.30" xbr="1138.40" ybr="1506.50" z_order="0">
+    </box>
+  </image>
+  <image id="189" name="jared4_0033.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1018.62" ytl="1442.90" xbr="1060.30" ybr="1473.40" z_order="0">
+    </box>
+  </image>
+  <image id="190" name="jared4_0034.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="969.75" ytl="1424.90" xbr="1000.60" ybr="1451.20" z_order="0">
+    </box>
+  </image>
+  <image id="191" name="jared4_0035.jpg" width="2160" height="3840">
+  </image>
+  <image id="192" name="jared4_0036.jpg" width="2160" height="3840">
+  </image>
+  <image id="193" name="jared4_0037.jpg" width="2160" height="3840">
+  </image>
+  <image id="194" name="jared4_0038.jpg" width="2160" height="3840">
+  </image>
+  <image id="195" name="jared4_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="196" name="jared4_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="197" name="jared4_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="198" name="jared4_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="199" name="jared4_0043.jpg" width="2160" height="3840">
+  </image>
+  <image id="200" name="jared4_0044.jpg" width="2160" height="3840">
+  </image>
+  <image id="201" name="jared4_0045.jpg" width="2160" height="3840">
+  </image>
+  <image id="202" name="jared4_0046.jpg" width="2160" height="3840">
+  </image>
+  <image id="203" name="jared4_0047.jpg" width="2160" height="3840">
+  </image>
+  <image id="204" name="jared4_0048.jpg" width="2160" height="3840">
+  </image>
+  <image id="205" name="zach1_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="206" name="zach1_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="207" name="zach1_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="208" name="zach1_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="209" name="zach1_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="210" name="zach1_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="211" name="zach1_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="212" name="zach1_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="213" name="zach1_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="214" name="zach1_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="215" name="zach1_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="216" name="zach1_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="217" name="zach1_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="218" name="zach1_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="219" name="zach1_0015.jpg" width="2160" height="3840">
+  </image>
+  <image id="220" name="zach1_0016.jpg" width="2160" height="3840">
+  </image>
+  <image id="221" name="zach1_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1454.40" ytl="882.60" xbr="1481.20" ybr="911.40" z_order="0">
+    </box>
+  </image>
+  <image id="222" name="zach1_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1454.73" ytl="880.95" xbr="1480.60" ybr="906.30" z_order="0">
+    </box>
+  </image>
+  <image id="223" name="zach1_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1450.80" ytl="885.90" xbr="1478.40" ybr="910.00" z_order="0">
+    </box>
+  </image>
+  <image id="224" name="zach1_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1449.10" ytl="887.64" xbr="1474.40" ybr="917.90" z_order="0">
+    </box>
+  </image>
+  <image id="225" name="zach1_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1440.55" ytl="899.79" xbr="1466.30" ybr="927.80" z_order="0">
+    </box>
+  </image>
+  <image id="226" name="zach1_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1435.82" ytl="917.81" xbr="1464.80" ybr="948.30" z_order="0">
+    </box>
+  </image>
+  <image id="227" name="zach1_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1426.00" ytl="942.74" xbr="1459.00" ybr="977.60" z_order="0">
+    </box>
+  </image>
+  <image id="228" name="zach1_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1420.70" ytl="975.79" xbr="1449.70" ybr="1004.40" z_order="0">
+    </box>
+  </image>
+  <image id="229" name="zach1_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1407.05" ytl="1015.10" xbr="1444.80" ybr="1057.40" z_order="0">
+    </box>
+  </image>
+  <image id="230" name="zach1_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1394.85" ytl="1072.35" xbr="1435.20" ybr="1112.70" z_order="0">
+    </box>
+  </image>
+  <image id="231" name="zach1_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1376.48" ytl="1141.31" xbr="1423.10" ybr="1196.00" z_order="0">
+    </box>
+  </image>
+  <image id="232" name="zach1_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1354.13" ytl="1233.05" xbr="1408.80" ybr="1296.80" z_order="0">
+    </box>
+  </image>
+  <image id="233" name="zach1_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1330.54" ytl="1345.60" xbr="1391.30" ybr="1424.40" z_order="0">
+    </box>
+  </image>
+  <image id="234" name="zach1_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1305.18" ytl="1504.04" xbr="1366.20" ybr="1584.00" z_order="0">
+    </box>
+  </image>
+  <image id="235" name="zach1_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1234.70" ytl="1535.47" xbr="1307.34" ybr="1713.33" rotation="336.70" z_order="0">
+    </box>
+  </image>
+  <image id="236" name="zach1_0032.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1107.29" ytl="1121.32" xbr="1160.46" ybr="1248.31" rotation="344.90" z_order="0">
+    </box>
+  </image>
+  <image id="237" name="zach1_0033.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1009.90" ytl="845.30" xbr="1058.90" ybr="898.10" z_order="0">
+    </box>
+  </image>
+  <image id="238" name="zach1_0034.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="951.66" ytl="652.35" xbr="986.30" ybr="707.00" z_order="0">
+    </box>
+  </image>
+  <image id="239" name="zach1_0035.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="910.00" ytl="514.89" xbr="941.10" ybr="562.30" z_order="0">
+    </box>
+  </image>
+  <image id="240" name="zach1_0036.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="875.05" ytl="413.40" xbr="905.65" ybr="461.40" z_order="0">
+    </box>
+  </image>
+  <image id="241" name="zach1_0037.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="850.40" ytl="343.30" xbr="875.50" ybr="379.70" z_order="0">
+    </box>
+  </image>
+  <image id="242" name="zach1_0038.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="829.17" ytl="280.03" xbr="851.50" ybr="309.70" z_order="0">
+    </box>
+  </image>
+  <image id="243" name="zach1_0039.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="809.80" ytl="235.69" xbr="832.70" ybr="269.10" z_order="0">
+    </box>
+  </image>
+  <image id="244" name="zach1_0040.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="798.56" ytl="204.27" xbr="818.90" ybr="222.60" z_order="0">
+    </box>
+  </image>
+  <image id="245" name="zach1_0041.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="794.62" ytl="205.36" xbr="813.30" ybr="223.70" z_order="0">
+    </box>
+  </image>
+  <image id="246" name="zach1_0042.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="789.10" ytl="226.66" xbr="807.50" ybr="244.40" z_order="0">
+    </box>
+  </image>
+  <image id="247" name="zach1_0043.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="783.90" ytl="253.00" xbr="803.10" ybr="272.60" z_order="0">
+    </box>
+  </image>
+  <image id="248" name="zach1_0044.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="772.58" ytl="288.80" xbr="788.48" ybr="304.40" z_order="0">
+    </box>
+  </image>
+  <image id="249" name="zach1_0045.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="759.63" ytl="321.76" xbr="780.20" ybr="351.10" z_order="0">
+    </box>
+  </image>
+  <image id="250" name="zach1_0046.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="748.19" ytl="361.94" xbr="766.70" ybr="388.30" z_order="0">
+    </box>
+  </image>
+  <image id="251" name="zach1_0047.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="738.00" ytl="401.70" xbr="753.10" ybr="428.50" z_order="0">
+    </box>
+  </image>
+  <image id="252" name="zach1_0048.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="725.80" ytl="443.90" xbr="742.30" ybr="469.40" z_order="0">
+    </box>
+  </image>
+  <image id="253" name="zach1_0049.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="711.22" ytl="487.23" xbr="730.60" ybr="512.70" z_order="0">
+    </box>
+  </image>
+  <image id="254" name="zach1_0050.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="699.91" ytl="533.00" xbr="718.30" ybr="560.60" z_order="0">
+    </box>
+  </image>
+  <image id="255" name="zach1_0051.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="688.92" ytl="583.03" xbr="705.60" ybr="608.20" z_order="0">
+    </box>
+  </image>
+  <image id="256" name="zach1_0052.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="674.89" ytl="637.72" xbr="695.42" ybr="661.47" z_order="0">
+    </box>
+  </image>
+  <image id="257" name="zach1_0053.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="665.42" ytl="676.90" xbr="686.27" ybr="702.94" z_order="0">
+    </box>
+  </image>
+  <image id="258" name="zach2_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="259" name="zach2_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="260" name="zach2_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="261" name="zach2_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="262" name="zach2_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="263" name="zach2_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="264" name="zach2_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="265" name="zach2_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="266" name="zach2_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="267" name="zach2_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="268" name="zach2_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="269" name="zach2_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="270" name="zach2_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="271" name="zach2_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="272" name="zach2_0015.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1494.43" ytl="887.49" xbr="1516.30" ybr="911.40" z_order="0">
+    </box>
+  </image>
+  <image id="273" name="zach2_0016.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1492.70" ytl="885.37" xbr="1514.10" ybr="912.80" z_order="0">
+    </box>
+  </image>
+  <image id="274" name="zach2_0017.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1487.80" ytl="885.00" xbr="1512.60" ybr="910.20" z_order="0">
+    </box>
+  </image>
+  <image id="275" name="zach2_0018.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1486.83" ytl="887.41" xbr="1511.60" ybr="912.20" z_order="0">
+    </box>
+  </image>
+  <image id="276" name="zach2_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1483.32" ytl="895.89" xbr="1510.70" ybr="920.80" z_order="0">
+    </box>
+  </image>
+  <image id="277" name="zach2_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1477.01" ytl="904.86" xbr="1503.90" ybr="935.80" z_order="0">
+    </box>
+  </image>
+  <image id="278" name="zach2_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1474.00" ytl="925.86" xbr="1503.40" ybr="953.30" z_order="0">
+    </box>
+  </image>
+  <image id="279" name="zach2_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1464.41" ytl="947.77" xbr="1497.80" ybr="980.20" z_order="0">
+    </box>
+  </image>
+  <image id="280" name="zach2_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1456.89" ytl="981.30" xbr="1492.80" ybr="1014.20" z_order="0">
+    </box>
+  </image>
+  <image id="281" name="zach2_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1451.91" ytl="1026.90" xbr="1487.30" ybr="1062.30" z_order="0">
+    </box>
+  </image>
+  <image id="282" name="zach2_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1440.89" ytl="1081.90" xbr="1477.30" ybr="1126.80" z_order="0">
+    </box>
+  </image>
+  <image id="283" name="zach2_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1425.19" ytl="1151.30" xbr="1468.60" ybr="1208.30" z_order="0">
+    </box>
+  </image>
+  <image id="284" name="zach2_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1409.30" ytl="1243.58" xbr="1458.10" ybr="1313.50" z_order="0">
+    </box>
+  </image>
+  <image id="285" name="zach2_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1389.50" ytl="1362.24" xbr="1443.40" ybr="1436.20" z_order="0">
+    </box>
+  </image>
+  <image id="286" name="zach2_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1368.00" ytl="1513.57" xbr="1425.70" ybr="1601.27" z_order="0">
+    </box>
+  </image>
+  <image id="287" name="zach2_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1339.96" ytl="1717.97" xbr="1405.60" ybr="1819.70" z_order="0">
+    </box>
+  </image>
+  <image id="288" name="zach2_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1300.48" ytl="1989.17" xbr="1373.70" ybr="2104.70" z_order="0">
+    </box>
+  </image>
+  <image id="289" name="zach2_0032.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1245.31" ytl="2413.03" xbr="1333.10" ybr="2512.70" z_order="0">
+    </box>
+  </image>
+  <image id="290" name="zach2_0033.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1166.74" ytl="2906.22" xbr="1278.70" ybr="3170.70" z_order="0">
+    </box>
+  </image>
+  <image id="291" name="zach2_0034.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1057.34" ytl="3417.20" xbr="1209.30" ybr="3606.60" z_order="0">
+    </box>
+  </image>
+  <image id="292" name="zach2_0035.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="938.96" ytl="3724.40" xbr="1121.00" ybr="3840.00" z_order="0">
+    </box>
+  </image>
+  <image id="293" name="zach2_0036.jpg" width="2160" height="3840">
+  </image>
+  <image id="294" name="zach2_0037.jpg" width="2160" height="3840">
+  </image>
+  <image id="295" name="zach2_0038.jpg" width="2160" height="3840">
+  </image>
+  <image id="296" name="zach2_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="297" name="zach2_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="298" name="zach2_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="299" name="zach2_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="300" name="zach2_0043.jpg" width="2160" height="3840">
+  </image>
+  <image id="301" name="zach2_0044.jpg" width="2160" height="3840">
+  </image>
+  <image id="302" name="zach3_0001.jpg" width="2160" height="3840">
+  </image>
+  <image id="303" name="zach3_0002.jpg" width="2160" height="3840">
+  </image>
+  <image id="304" name="zach3_0003.jpg" width="2160" height="3840">
+  </image>
+  <image id="305" name="zach3_0004.jpg" width="2160" height="3840">
+  </image>
+  <image id="306" name="zach3_0005.jpg" width="2160" height="3840">
+  </image>
+  <image id="307" name="zach3_0006.jpg" width="2160" height="3840">
+  </image>
+  <image id="308" name="zach3_0007.jpg" width="2160" height="3840">
+  </image>
+  <image id="309" name="zach3_0008.jpg" width="2160" height="3840">
+  </image>
+  <image id="310" name="zach3_0009.jpg" width="2160" height="3840">
+  </image>
+  <image id="311" name="zach3_0010.jpg" width="2160" height="3840">
+  </image>
+  <image id="312" name="zach3_0011.jpg" width="2160" height="3840">
+  </image>
+  <image id="313" name="zach3_0012.jpg" width="2160" height="3840">
+  </image>
+  <image id="314" name="zach3_0013.jpg" width="2160" height="3840">
+  </image>
+  <image id="315" name="zach3_0014.jpg" width="2160" height="3840">
+  </image>
+  <image id="316" name="zach3_0015.jpg" width="2160" height="3840">
+  </image>
+  <image id="317" name="zach3_0016.jpg" width="2160" height="3840">
+  </image>
+  <image id="318" name="zach3_0017.jpg" width="2160" height="3840">
+  </image>
+  <image id="319" name="zach3_0018.jpg" width="2160" height="3840">
+  </image>
+  <image id="320" name="zach3_0019.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1499.18" ytl="888.23" xbr="1523.80" ybr="910.50" z_order="0">
+    </box>
+  </image>
+  <image id="321" name="zach3_0020.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1501.68" ytl="887.70" xbr="1523.40" ybr="911.90" z_order="0">
+    </box>
+  </image>
+  <image id="322" name="zach3_0021.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1502.37" ytl="889.19" xbr="1526.10" ybr="913.40" z_order="0">
+    </box>
+  </image>
+  <image id="323" name="zach3_0022.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1503.95" ytl="892.93" xbr="1528.30" ybr="920.30" z_order="0">
+    </box>
+  </image>
+  <image id="324" name="zach3_0023.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1506.10" ytl="903.44" xbr="1531.55" ybr="928.20" z_order="0">
+    </box>
+  </image>
+  <image id="325" name="zach3_0024.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1506.75" ytl="916.67" xbr="1538.00" ybr="945.00" z_order="0">
+    </box>
+  </image>
+  <image id="326" name="zach3_0025.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1508.75" ytl="936.40" xbr="1537.00" ybr="965.10" z_order="0">
+    </box>
+  </image>
+  <image id="327" name="zach3_0026.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1509.69" ytl="966.20" xbr="1542.00" ybr="998.14" z_order="0">
+    </box>
+  </image>
+  <image id="328" name="zach3_0027.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1509.64" ytl="1000.10" xbr="1543.90" ybr="1036.90" z_order="0">
+    </box>
+  </image>
+  <image id="329" name="zach3_0028.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1509.87" ytl="1046.15" xbr="1547.80" ybr="1084.70" z_order="0">
+    </box>
+  </image>
+  <image id="330" name="zach3_0029.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1510.03" ytl="1106.04" xbr="1553.50" ybr="1158.20" z_order="0">
+    </box>
+  </image>
+  <image id="331" name="zach3_0030.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1512.13" ytl="1185.70" xbr="1559.20" ybr="1243.40" z_order="0">
+    </box>
+  </image>
+  <image id="332" name="zach3_0031.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1510.28" ytl="1281.46" xbr="1560.78" ybr="1350.96" z_order="0">
+    </box>
+  </image>
+  <image id="333" name="zach3_0032.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1507.80" ytl="1402.70" xbr="1565.50" ybr="1487.90" z_order="0">
+    </box>
+  </image>
+  <image id="334" name="zach3_0033.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1514.41" ytl="1572.98" xbr="1571.80" ybr="1664.40" z_order="0">
+    </box>
+  </image>
+  <image id="335" name="zach3_0034.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1513.48" ytl="1791.11" xbr="1582.40" ybr="1895.80" z_order="0">
+    </box>
+  </image>
+  <image id="336" name="zach3_0035.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="1798.67" ytl="1337.38" xbr="1865.46" ybr="1505.13" rotation="24.10" z_order="0">
+    </box>
+  </image>
+  <image id="337" name="zach3_0036.jpg" width="2160" height="3840">
+    <box label="baseball" source="manual" occluded="0" xtl="2070.03" ytl="882.05" xbr="2134.66" ybr="1029.20" rotation="28.50" z_order="0">
+    </box>
+  </image>
+  <image id="338" name="zach3_0037.jpg" width="2160" height="3840">
+  </image>
+  <image id="339" name="zach3_0038.jpg" width="2160" height="3840">
+  </image>
+  <image id="340" name="zach3_0039.jpg" width="2160" height="3840">
+  </image>
+  <image id="341" name="zach3_0040.jpg" width="2160" height="3840">
+  </image>
+  <image id="342" name="zach3_0041.jpg" width="2160" height="3840">
+  </image>
+  <image id="343" name="zach3_0042.jpg" width="2160" height="3840">
+  </image>
+  <image id="344" name="zach3_0043.jpg" width="2160" height="3840">
+  </image>
+  <image id="345" name="zach3_0044.jpg" width="2160" height="3840">
+  </image>
+  <image id="346" name="zach3_0045.jpg" width="2160" height="3840">
+  </image>
+  <image id="347" name="zach3_0046.jpg" width="2160" height="3840">
+  </image>
+  <image id="348" name="zach3_0047.jpg" width="2160" height="3840">
+  </image>
+  <image id="349" name="zach3_0048.jpg" width="2160" height="3840">
+  </image>
+  <image id="350" name="zach3_0049.jpg" width="2160" height="3840">
+  </image>
+  <image id="351" name="zach3_0050.jpg" width="2160" height="3840">
+  </image>
+  <image id="352" name="zach3_0051.jpg" width="2160" height="3840">
+  </image>
+  <image id="353" name="zach3_0052.jpg" width="2160" height="3840">
+  </image>
+  <image id="354" name="zach3_0053.jpg" width="2160" height="3840">
+  </image>
+  <image id="355" name="zach3_0054.jpg" width="2160" height="3840">
+  </image>
+  <image id="356" name="zach3_0055.jpg" width="2160" height="3840">
+  </image>
+</annotations>

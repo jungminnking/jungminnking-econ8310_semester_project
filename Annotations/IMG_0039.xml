@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2173214</id>
+      <name>img_0039</name>
+      <size>54</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-14 19:43:11.662319+00:00</created>
+      <updated>2026-04-14 19:48:19.616074+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>53</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3855149</id>
+          <start>0</start>
+          <stop>53</stop>
+          <url>https://app.cvat.ai/api/tasks/2173214/dataset/export/api/jobs/3856589</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>judytruo</username>
+        <email>judytruong99@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#c04080</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <original_size>
+        <width>2160</width>
+        <height>3840</height>
+      </original_size>
+      <source>IMG_0039.mov</source>
+    </task>
+    <dumped>2026-04-14 19:48:45.827435+00:00</dumped>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="26" keyframe="1" outside="0" occluded="0" xtl="1842.57" ytl="1827.05" xbr="2072.36" ybr="1911.80" rotation="346.00" z_order="0">
+    </box>
+    <box frame="27" keyframe="1" outside="1" occluded="0" xtl="1842.57" ytl="1827.05" xbr="2072.36" ybr="1911.80" rotation="346.00" z_order="0">
+    </box>
+  </track>
+  <track id="1" label="baseball" source="manual">
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="1263.92" ytl="1968.99" xbr="1474.79" ybr="2045.91" rotation="343.00" z_order="0">
+    </box>
+    <box frame="28" keyframe="1" outside="1" occluded="0" xtl="1263.92" ytl="1968.99" xbr="1474.79" ybr="2045.91" rotation="343.00" z_order="0">
+    </box>
+  </track>
+  <track id="2" label="baseball" source="manual">
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1343.74" ytl="1773.00" xbr="1690.47" ybr="1858.87" rotation="329.30" z_order="0">
+    </box>
+    <box frame="29" keyframe="1" outside="1" occluded="0" xtl="1343.74" ytl="1773.00" xbr="1690.47" ybr="1858.87" rotation="329.30" z_order="0">
+    </box>
+  </track>
+</annotations>

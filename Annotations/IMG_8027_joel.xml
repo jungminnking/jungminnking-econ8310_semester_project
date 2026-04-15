@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3826646</id>
+      <size>54</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-05 23:34:39.736737+00:00</created>
+      <updated>2026-04-05 23:44:59.966097+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>53</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3825586</id>
+          <start>0</start>
+          <stop>53</stop>
+          <url>https://app.cvat.ai/api/jobs/3826646/dataset/export/api/jobs/3826646</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>ajnutt24</username>
+        <email>adam.nutt24@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>sports ball</name>
+          <color>#300000</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-05 23:55:46.506046+00:00</dumped>
+    <original_size>
+      <width>2160</width>
+      <height>3840</height>
+    </original_size>
+  </meta>
+  <track id="0" label="sports ball" source="manual">
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="37" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="39" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="46" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="47" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="48" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="50" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+    <box frame="53" keyframe="0" outside="0" occluded="0" xtl="1535.46" ytl="1724.45" xbr="1829.11" ybr="1799.74" z_order="0">
+    </box>
+  </track>
+  <track id="1" label="sports ball" source="manual">
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="1798.99" ytl="1596.45" xbr="1949.58" ybr="1679.27" z_order="0">
+    </box>
+    <box frame="31" keyframe="1" outside="1" occluded="0" xtl="1798.99" ytl="1596.45" xbr="1949.58" ybr="1679.27" z_order="0">
+    </box>
+  </track>
+</annotations>

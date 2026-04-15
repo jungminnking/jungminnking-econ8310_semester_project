@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2112958</id>
+      <name>IMG_034</name>
+      <size>52</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-03-21 03:44:58.433196+00:00</created>
+      <updated>2026-03-21 03:51:42.882037+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>51</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3755442</id>
+          <start>0</start>
+          <stop>51</stop>
+          <url>https://app.cvat.ai/api/tasks/2112958/dataset/export/api/jobs/3756271</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>andrewdigiacomo</username>
+        <email>andrewdigiacomo27@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#ff00cc</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>moving</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <original_size>
+        <width>2160</width>
+        <height>3840</height>
+      </original_size>
+      <source>IMG_0034.mov</source>
+    </task>
+    <dumped>2026-03-21 03:53:46.359805+00:00</dumped>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="1589.20" ytl="1619.26" xbr="1821.14" ybr="1730.94" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1013.60" ytl="1743.80" xbr="1228.40" ybr="1859.80" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="1795.30" ytl="1700.90" xbr="2113.20" ybr="1791.10" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="1" occluded="0" xtl="1795.30" ytl="1700.90" xbr="2113.20" ybr="1791.10" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+  </track>
+</annotations>

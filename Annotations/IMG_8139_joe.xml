@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>3818526</id>
+      <size>63</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-04 00:51:39.311512+00:00</created>
+      <updated>2026-04-04 01:05:40.694776+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>62</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3817466</id>
+          <start>0</start>
+          <stop>62</stop>
+          <url>https://app.cvat.ai/api/jobs/3818526/dataset/export/api/jobs/3818526</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>cvatUserMan</username>
+        <email>kirk@moonspace.net</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#c04080</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-04-04 01:05:55.146239+00:00</dumped>
+    <original_size>
+      <width>2160</width>
+      <height>3840</height>
+    </original_size>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="2017.22" ytl="1522.05" xbr="2157.79" ybr="1604.91" rotation="345.50" z_order="0">
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="1715.96" ytl="1606.71" xbr="1856.52" ybr="1689.57" rotation="345.50" z_order="0">
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="1483.54" ytl="1657.90" xbr="1699.89" ybr="1734.93" rotation="337.30" z_order="0">
+    </box>
+    <box frame="38" keyframe="1" outside="1" occluded="0" xtl="1483.54" ytl="1657.90" xbr="1699.89" ybr="1734.93" rotation="337.30" z_order="0">
+    </box>
+  </track>
+</annotations>

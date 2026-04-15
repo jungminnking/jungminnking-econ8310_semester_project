@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2148468</id>
+      <name>video_5</name>
+      <size>53</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-03 22:40:56.221213+00:00</created>
+      <updated>2026-04-03 23:24:16.546501+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>52</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3817421</id>
+          <start>0</start>
+          <stop>52</stop>
+          <url>https://app.cvat.ai/api/tasks/2148468/dataset/export/api/jobs/3818481</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>Prfseun</username>
+        <email>seunakinbowale212@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#ff00cc</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>moving</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <original_size>
+        <width>2160</width>
+        <height>3840</height>
+      </original_size>
+      <source>IMG_8062_patrick.mov</source>
+    </task>
+    <dumped>2026-04-03 23:26:13.955247+00:00</dumped>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="28.70" ytl="2495.50" xbr="113.00" ybr="2573.40" z_order="0">
+      <attribute name="moving">false</attribute>
+    </box>
+  </track>
+  <track id="1" label="baseball" source="manual">
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="129.00" ytl="2530.90" xbr="214.60" ybr="2613.90" z_order="0">
+      <attribute name="moving">false</attribute>
+    </box>
+  </track>
+  <track id="2" label="baseball" source="manual">
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="2006.90" ytl="1908.70" xbr="2058.30" ybr="1955.20" z_order="0">
+      <attribute name="moving">false</attribute>
+    </box>
+  </track>
+  <track id="3" label="baseball" source="manual">
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="1978.30" ytl="1672.00" xbr="2160.00" ybr="1897.20" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="1" occluded="0" xtl="1978.30" ytl="1672.00" xbr="2160.00" ybr="1897.20" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+  </track>
+</annotations>
