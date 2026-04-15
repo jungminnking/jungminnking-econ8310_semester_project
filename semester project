@@ -1,0 +1,189 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import Dataset, DataLoader, random_split
+import xml.etree.ElementTree as ET
+import cv2
+import numpy as np
+import os, random
+
+# Setups for Paths
+## Change it to your local paths  
+XML_DIR   = r"\\JUNGMINN\Users\jungm\Documents\GitHub\jungminnking-econ8310_semester_project\Annotations"
+VIDEO_DIR = r"\\JUNGMINN\Users\jungm\Documents\GitHub\jungminnking-econ8310_semester_project\Raw Videos"
+
+# Pairing Each XML with Videos By Filename
+all_pairs = []
+for fname in os.listdir(XML_DIR):
+    if fname.endswith('.xml'):
+        name      = os.path.splitext(fname)[0] # Common Name 
+        xml_path  = os.path.join(XML_DIR, fname)
+        video_path = os.path.join(VIDEO_DIR, name + '.mov')
+        if os.path.exists(video_path):
+            all_pairs.append((xml_path, video_path))
+        else:
+            print(f"WARNING: no video found for {fname}")
+
+print(f"Found {len(all_pairs)} matched XML/video pairs")
+
+# Data Framinig for Annotated Videos (All Paired Vedioes) 
+class BaseballDataset(Dataset):
+    def __init__(self, whatever_pairs, n_frames=8, img_size=64): # we're going to build datasets for whatever pair
+        self.n_frames  = n_frames
+        self.img_size  = img_size
+        self.samples   = []
+        
+        for xml_path, video_path in whatever_pairs:  # loops over all pairs
+            frames = self._load_all_frames(video_path) #all frames into memory
+            total_frames     = len(frames)
+            root             = ET.parse(xml_path).getroot() #parsing and getting root
+        
+            for track in root.findall('track'):
+                boxes = []
+                for box in track.findall('box'):
+                    if int(box.attrib['outside']) == 1:
+                        continue #in case that balls turn invisible
+                    frame_idx = int(box.attrib['frame'])
+                    if frame_idx >= total_frames:
+                        continue #Skips if beyond the actual number of frames
+                    moving_attr = box.find("attribute[@name='moving']") #moving and stationary
+                    is_moving   = moving_attr is not None and moving_attr.text.strip().lower() == 'true'
+                    boxes.append({
+                        'frame'  : frame_idx,
+                        'xtl'    : float(box.attrib['xtl']),
+                        'ytl'    : float(box.attrib['ytl']),
+                        'xbr'    : float(box.attrib['xbr']),
+                        'ybr'    : float(box.attrib['ybr']),
+                        'moving' : is_moving,
+                        'frames_ref': frames,  # store reference to THIS video's frames
+                    })
+                if len(boxes) < n_frames:
+                    continue #If a track has fewer visible boxes than our window size, we can't build a sample from it — skip it.
+                label = 1 if sum(b['moving'] for b in boxes) > len(boxes) / 2 else 0 #Majority vote — if more than half the boxes in this track are moving=true, the whole track gets label 1 (pitched), otherwise 0 (stationary).
+                for start in range(0, len(boxes) - n_frames + 1, n_frames // 2):
+                    self.samples.append((boxes[start:start + n_frames], label)) 
+    
+    def _load_all_frames(self, video_path):
+        cap, frames = cv2.VideoCapture(video_path), [] #Opens the video file with OpenCV and initializes an empty frames list in one line.
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break #Reads frames one by one. ret is False when the video ends, which breaks the loop.
+            frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)) #OpenCV loads frames as BGR by default. 
+        cap.release()
+        return frames 
+    
+    def _crop_ball(self, frame, box, padding=10):
+        h, w = frame.shape[:2] #Gets the height and width of the frame so we can clamp coordinates.
+        x1   = max(0, int(box['xtl']) - padding) #Adds 10px padding around the bounding box. max(0,...) and min(w/h,...).
+        y1   = max(0, int(box['ytl']) - padding)
+        x2   = min(w, int(box['xbr']) + padding)
+        y2   = min(h, int(box['ybr']) + padding)
+        crop = frame[y1:y2, x1:x2]
+        if crop.size == 0:
+            crop = np.zeros((self.img_size, self.img_size, 3), dtype=np.uint8) #Cuts out the ball region. If the crop is somehow empty, substitutes a black square.
+        return cv2.resize(crop, (self.img_size, self.img_size)) #Resizes every crop to the same 64×64 size so all tensors have identical shape.
+        
+    def __len__(self):
+        return len(self.samples) # Required by PyTorch — tells the DataLoader how many total samples exist.
+
+    def __getitem__(self, idx):
+        window, label = self.samples[idx]
+        crops = [self._crop_ball(b['frames_ref'][b['frame']], b) for b in window]  # uses per-video frames
+        video = torch.tensor(np.stack(crops).astype(np.float32) / 255.0).permute(3, 0, 1, 2)
+        return video, torch.tensor(label, dtype=torch.long)
+
+
+# Randome Sampling for Training and Testing 
+random.seed(42) 
+random.shuffle(all_pairs)
+
+# We're going to make a random subset
+subset_pairs = all_pairs[:int(0.2 * len(all_pairs))]
+split        = int(0.8 * len(subset_pairs)) # 0.8 = 80% to training # 20% to Testing; We can always change
+train_pairs  = subset_pairs[:split]
+test_pairs    = subset_pairs[split:]
+
+train_dataset = BaseballDataset(train_pairs, n_frames=8)
+test_dataset   = BaseballDataset(test_pairs,   n_frames=8) 
+train_dataloader = DataLoader(train_dataset, batch_size=4, shuffle=True) #shuffle=True, to randomize sample order for each epoch
+test_dataloader  = DataLoader(test_dataset,   batch_size=4)
+
+print(f"Total video pairs (subset) : {len(subset_pairs)}")
+print(f"Train samples     : {len(train_dataset)}")
+print(f"Test samples      : {len(test_dataset)}")
+print(f"Moving (Train)    : {sum(s[1] for s in train_dataset.samples)}")
+print(f"Stationary (Train): {sum(1-s[1] for s in train_dataset.samples)}")
+print(f"Moving (Test)     : {sum(s[1] for s in test_dataset.samples)}")
+print(f"Stationary (Test) : {sum(1-s[1] for s in test_dataset.samples)}")
+print(f"Stationary (Test) : {sum(1-s[1] for s in test_dataset.samples)}")
+
+## LeNet Model
+# Basic LeNet
+class BaseballCNN(nn.Module):
+    def __init__(self):
+        super(BaseballCNN, self).__init__()
+         #Two Conv layers (LeNet Structure)
+        self.conv1 = nn.LazyConv3d(6,  kernel_size=3, padding=1) #Two 3D conv layers, instead of 2D, consideirng a time dimension
+        self.conv2 = nn.LazyConv3d(16, kernel_size=3)
+        #Three fully connected layers
+        self.fc1 = nn.LazyLinear(120)
+        self.fc2 = nn.LazyLinear(84)
+        self.fc3 = nn.LazyLinear(2) #Final outputs: 2 classes: stationary vs moving
+
+    def forward(self, x):
+        # x shape: (B, 3, T, 64, 64)
+        x = F.max_pool3d(F.relu(self.conv1(x)), (1, 2, 2))
+        x = F.max_pool3d(F.relu(self.conv2(x)), (2, 2, 2))
+        x = torch.flatten(x, 1)
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+# Uses GPU if available, otherwise CPU. 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+mLeNet  = BaseballCNN().to(device)
+
+# Initialise lazy layers with one dummy forward pass
+dummy = torch.zeros(1, 3, 8, 64, 64).to(device)
+mLeNet(dummy)
+
+# Setting Optimizers & Epoch
+opt  = torch.optim.Adam(mLeNet.parameters(), lr=1e-3)
+crit = nn.CrossEntropyLoss()
+epoch = 20
+
+# Fitting through Foward and Backword Passes
+for epoch in range(epoch): 
+    mLeNet.train()
+    total_loss, correct, total = 0, 0, 0
+    for videos, labels in train_dataloader:
+        videos, labels = videos.to(device), labels.to(device)
+        opt.zero_grad() #PyTorch accumulates gradients by default so reset them manually
+        out  = mLeNet(videos) #Forward pass — runs the batch through the model to get predictions, then computes how wrong they are.
+        loss = crit(out, labels)
+        loss.backward() #Backward pass — computes gradients via backpropagation. opt.step() uses those gradients to update the weights
+        opt.step()
+        total_loss += loss.item()
+        correct    += (out.argmax(1) == labels).sum().item() #Tracks loss and accuracy across the epoch. out.argmax(1) picks the class with the highest score.
+        total      += len(labels)
+#Testing the model
+    mLeNet.eval()
+    val_correct, val_total = 0, 0
+    with torch.no_grad(): #turns off gradient computation during validation
+        for videos, labels in test_dataloader:
+            videos, labels = videos.to(device), labels.to(device)
+            val_correct += (mLeNet(videos).argmax(1) == labels).sum().item()
+            val_total   += len(labels) #Runs validation batches through the model and counts correct predictions.
+
+    print(f"Epoch {epoch+1:02d}/{20}  "
+         f"loss={total_loss/len(train_dataloader):.4f}  "
+         f"train_acc={correct/total:.2%}  "
+         f"val_acc={val_correct/max(val_total,1):.2%}")
+
+
+# If we need to save weights
+WEIGHTS = r"\\JUNGMINN\Users\jungm\Documents\GitHub\jungminnking-econ8310_semester_project\saved_weights.pth"
+torch.save(mLeNet.state_dict(), WEIGHTS)
+print(f"\nWeights saved → {WEIGHTS}") 
